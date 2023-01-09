@@ -1,9 +1,13 @@
+@import url("styles/header.css");
+
 :root {
   --background-color: #EBECEE;
-  
+  --white: #ffffff;
+  --orange: #EB9B00;
+  --gradient-blue: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+
 }
 
 body {
   background-color: var(--background-color);
 }
-
