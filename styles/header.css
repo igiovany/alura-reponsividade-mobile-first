@@ -21,6 +21,14 @@
 }
 
 .container__image {
+  padding: 0.5em;
+}
+
+ul + .container__image {
+  padding: 1em;
+}
+
+label .container__image {
   padding: 1em;
 }
 
@@ -43,6 +51,7 @@
 
 .menu-list__title {
   color: var(--orange);
+  font-weight: 700;
 }
 
 .menu-list__link {
@@ -51,4 +60,8 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-transform: uppercase;
+}
+
+.container__button {
+  display: none;
 }
