@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
 
   <title>Alura Books</title>
@@ -45,6 +46,46 @@
     <input type="search" class="banner__search" placeholder="Qual será sua próxima leitura?">
 
   </section>
+
+  <section class="carousel">
+    <h2 class="carousel__title">Novos Lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/ApacheKafka.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/Liderança.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/Javascript.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/Guia Front-end.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/Portugol.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/Acessibilidade.png" alt=""></div>
+        ...
+      </div>
+
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      }
+    });
+  </script>
 </body>
 
 </html>
