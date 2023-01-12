@@ -11,11 +11,69 @@
 .swiper-slide img {
   width: 100%;
 }
-.swiper-button-prev, .swiper-button-next {
+
+.swiper-button-prev,
+.swiper-button-next {
   display: none;
 }
 
 .swiper-pagination {
   position: initial;
   margin: 0.5em 0;
+}
+
+.card {
+  background: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.card__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.description_star{
+  margin-bottom: 0.5rem;
+  color: var(--orange);
+}
+
+.description__title {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.description__title-book {
+  color: var(--navy-blue);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.description__text {
+  font-size: 0.875rem;
+}
+
+.description__image {
+  margin-left: 1.2rem;
+}
+
+.card__button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  display: flex;
+}
+
+.button__anchor {
+  background-color: var(--orange);
+  padding: 1.2rem 2.25rem;
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
 }
