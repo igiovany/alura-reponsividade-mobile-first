@@ -8,9 +8,11 @@
 :root {
   --background-color: #EBECEE;
   --white: #ffffff;
+  --black: #000000;
   --orange: #EB9B00;
   --gradient-blue: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
   --main-font: "Poppins";
+  --secondary-font: "Josefin Sans";
   --navy-blue: #002F52;
 }
 
