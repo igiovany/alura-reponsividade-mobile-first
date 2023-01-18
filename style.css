@@ -6,14 +6,17 @@
 @import url("styles/footer.css");
 
 :root {
-  --background-color: #EBECEE;
   --white: #ffffff;
   --black: #000000;
+  --background-color: #EBECEE;
+  --gray: #474646;
+  --light-gray: #858585;
+  --navy-blue: #002F52;
   --orange: #EB9B00;
   --gradient-blue: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
   --main-font: "Poppins";
   --secondary-font: "Josefin Sans";
-  --navy-blue: #002F52;
+
 }
 
 body {
