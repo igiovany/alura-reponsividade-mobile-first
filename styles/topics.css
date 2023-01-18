@@ -19,6 +19,7 @@
 .topics__item {
   margin: 1.5rem 0.5rem;
 }
+
 .topics__link {
   color: var(--white);
   padding: 1rem;
@@ -26,4 +27,23 @@
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  .topics {
+    padding: 1rem 9rem;
+
+  }
+
+  .topics__item {
+    margin: 1.7rem 0.5rem;
+  }
+
+  .topics__title {
+    font-size: 1.5rem;
+  }
+
+  .topics__link {
+    font-size: 1.5rem;
+  }
 }

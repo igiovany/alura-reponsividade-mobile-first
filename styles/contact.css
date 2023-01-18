@@ -3,12 +3,13 @@
   padding: 1rem;
 }
 
-.contact__title, .contact__text {
+.contact__title,
+.contact__text {
   background: var(--gradient-blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  
+
 }
 
 .contact__title {
@@ -34,5 +35,29 @@
   color: var(--navy-blue);
   background: url("../img/Email.svg") no-repeat;
   padding-left: 2rem;
-  
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__title {
+    font-size: 1.5rem;
+  }
+
+  .contact__email {
+    width: 30%;
+  }
+
+  .contact__description {
+    margin-right: 1rem;
+    width: 30%;
+
+  }
+
 }
