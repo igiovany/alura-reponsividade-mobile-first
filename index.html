@@ -58,8 +58,14 @@
     <div class="container">
       <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
           class="container__image container__image-transparent"></a>
-      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__image"></a>
-      <a href="#"><img src="img/Usuário.svg" alt="Meu perfil" class="container__image"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__image">
+        <p class="container__text">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuário.svg" alt="Meu perfil" class="container__image">
+        <p class="container__text">Meu Perfil</p>
+      </a>
     </div>
   </header>
   <section class="banner">
@@ -71,87 +77,95 @@
 
   <section class="carousel">
     <h2 class="carousel__title">Últimos Lançamentos</h2>
-    <!-- Slider main container -->
-    <div class="swiper">
 
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="img/ApacheKafka.png" alt=""></div>
-        <div class="swiper-slide"><img src="img/Liderança.png" alt=""></div>
-        <div class="swiper-slide"><img src="img/Javascript.png" alt=""></div>
-        <div class="swiper-slide"><img src="img/Guia Front-end.png" alt=""></div>
-        <div class="swiper-slide"><img src="img/Portugol.png" alt=""></div>
-        <div class="swiper-slide"><img src="img/Acessibilidade.png" alt=""></div>
-      </div>
+    <div class="carousel__container">
 
+      <!-- Slider main container -->
+      <div class="swiper">
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-
-    <div class="card">
-      <div class="card__description">
-        <div class="description">
-          <h3 class="description__title">Talvez você também se interesse por...</h3>
-          <h2 class="description__title-book">Angular 11 e Firebase</h2>
-          <p class="description__text">Construindo uma aplicação integrada com a plataforma do Google.</p>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/ApacheKafka.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/Liderança.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/Javascript.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/Guia Front-end.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/Portugol.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/Acessibilidade.png" alt=""></div>
         </div>
-        <img src="img/Angular.png" class="description__image">
+
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <div class="card__button">
-        <ul class="button">
-          <li class="button__item"><img src="img/Favoritos.svg" alt=""></li>
-          <li class="button__item"><img src="img/Compras.svg" alt=""></li>
-        </ul>
-        <a href="" class="button__anchor">Saiba Mais</a>
+
+      <div class="card">
+        <div class="card__description">
+          <div class="description">
+            <h3 class="description__title">Talvez você também se interesse por...</h3>
+            <h2 class="description__title-book">Angular 11 e Firebase</h2>
+            <p class="description__text">Construindo uma aplicação integrada com a plataforma do Google.</p>
+          </div>
+          <img src="img/Angular.png" class="description__image">
+        </div>
+        <div class="card__button">
+          <ul class="button">
+            <li class="button__item"><img src="img/Favoritos.svg" alt=""></li>
+            <li class="button__item"><img src="img/Compras.svg" alt=""></li>
+          </ul>
+          <a href="" class="button__anchor">Saiba Mais</a>
+        </div>
       </div>
     </div>
+
   </section>
 
   <section class="carousel">
     <h2 class="carousel__title">Mais vendidos</h2>
-    <!-- Slider main container -->
-    <div class="swiper">
 
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="img/Guia Front-end.png" alt=""></div>
-        <div class="swiper-slide"><img src="img/Javascript.png" alt=""></div>
-        <div class="swiper-slide"><img src="img/Liderança.png" alt=""></div>
-        <div class="swiper-slide"><img src="img/ApacheKafka.png" alt=""></div>
-        <div class="swiper-slide"><img src="img/Portugol.png" alt=""></div>
-        <div class="swiper-slide"><img src="img/Acessibilidade.png" alt=""></div>
-      </div>
+    <div class="carousel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
 
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-
-    <div class="card">
-      <div class="card__description">
-        <div class="description">
-          <p class="description_star">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-          <h3 class="description__title">Autora do Mês</h3>
-          <h2 class="description__title-book">Juliana Agarikov</h2>
-          <p class="description__text">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/Guia Front-end.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/Javascript.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/Liderança.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/ApacheKafka.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/Portugol.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/Acessibilidade.png" alt=""></div>
         </div>
-        <img src="img/Perfil-escritora 1-1.png" class="description__image">
+
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <div class="card__button">
-        <ul class="button">
-          <li class="button__item"><img src="img/Favoritos.svg" alt=""></li>
-          <li class="button__item"><img src="img/Compras.svg" alt=""></li>
-        </ul>
-        <a href="" class="button__anchor">Saiba Mais</a>
+
+      <div class="card">
+        <div class="card__description">
+          <div class="description">
+            <p class="description_star">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <h3 class="description__title">Autora do Mês</h3>
+            <h2 class="description__title-book">Juliana Agarikov</h2>
+            <p class="description__text">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+          </div>
+          <img src="img/Perfil-escritora 1-1.png" class="description__image">
+        </div>
+        <div class="card__button">
+          <ul class="button">
+            <li class="button__item"><img src="img/Favoritos.svg" alt=""></li>
+            <li class="button__item"><img src="img/Compras.svg" alt=""></li>
+          </ul>
+          <a href="" class="button__anchor">Saiba Mais</a>
+        </div>
       </div>
     </div>
   </section>
@@ -205,7 +219,7 @@
         <img src="img/Caelum.png">
         <a href="#" class="list-footer__link">Caelum</a>
       </li>
-      
+
       <li class="list-footer__item">
         <img src="img/CasaDoCodigo.png">
         <a href="#" class="list-footer__link">Casa do Código</a>
@@ -245,7 +259,7 @@
     </ul>
 
     <ul class="list-footer">
-      <li class="list-footer__title">COMUNIDADE</li>   
+      <li class="list-footer__title">COMUNIDADE</li>
       <li class="list-footer__item">
         <img src="img/HipstersTech.png">
         <a href="#" class="list-footer__link">Hipsters ponto Tech</a>
