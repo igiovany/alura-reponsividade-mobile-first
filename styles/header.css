@@ -7,6 +7,15 @@
   display: inline-block;
 }
 
+.container__button:checked ~ .container__label > .header__hamburger-menu {
+  background-image: url("../img/Menu\ Aberto.png");
+}
+
+.container__button:checked ~ .container__label {
+  background: var(--gradient-blue
+  );
+}
+
 .header {
   background-color: var(--white);
   display: flex;
@@ -78,6 +87,8 @@ label .container__image {
   display: none;
 }
 
+
+
 @media screen and (min-width: 1024px) {
   .container__title, .container__title--bold {
     font-family: var(--secondary-font);
@@ -123,6 +134,17 @@ label .container__image {
     display: none;
   }
 
+  .options__button:checked ~ .options__label > .options__item {
+    background: var(--gradient-blue);
+    color: var(--white);
+
+  }
+
+  .options__item {
+    padding: 2rem 1rem;
+  }
+
+  
 }
 
 @media screen and (min-width: 1728px) {
@@ -143,6 +165,15 @@ label .container__image {
 
   .options {
     margin-right: auto;
+  }
+
+  .menu-list__item:hover {
+    background: var(--gradient-blue);
+  }
+
+  .menu-list__item:hover > .menu-list__link {
+    -webkit-text-fill-color: var(--white);
+    text-decoration: none;
   }
 
 }
